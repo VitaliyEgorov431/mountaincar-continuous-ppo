@@ -1,0 +1,327 @@
+{
+  "provenance": {
+    "python": "3.12.10",
+    "packages": {
+      "numpy": "2.5.4",
+      "torch": "2.15.0",
+      "gymnasium": "1.4.0",
+      "matplotlib": "3.11.2",
+      "imageio": "2.38.1",
+      "imageio-ffmpeg": "0.8.1",
+      "pygame-ce": "2.5.8"
+    },
+    "checkpoint_sha256": {
+      "results\\revised\\final\\seed_1\\best.pt": "14f9cb523ff8f02db0612e2b91c41ebe5cf664c34ab3d9a5875eda1a2b448b11",
+      "results\\revised\\final\\seed_2\\best.pt": "604053ff638326af8e0b1a80a1699e49da1b8924d9b640e0f5b67c7937555803",
+      "results\\revised\\final\\seed_3\\best.pt": "105d97a8d1777927b5c2e04eda6579d8e9c8a1965712dd706dbe8bf621555771",
+      "results\\revised\\final\\seed_4\\best.pt": "aa4c6b816d69849bc78f8f22e6d68a2f9267dc06887f9971d14699a8ca642a9f",
+      "results\\revised\\final\\seed_5\\best.pt": "abb7aae0433ebb8478ff1104313d5f4bd2f9a8f1fbec553be6d3652dd7059241"
+    },
+    "seed_range": [
+      30000,
+      30999
+    ],
+    "grid": {
+      "min": -0.6,
+      "max": -0.4,
+      "points": 201,
+      "speed": 0.0,
+      "rng_seed_per_point": "30000 + index"
+    },
+    "max_steps": 999,
+    "policy": "deterministic, clipped to [-1, 1]",
+    "random_hold_repeat": 20,
+    "torch_threads": 1,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "source_sha256": {
+      "requirements.txt": "3fdc672af61485981ca9bd053165a2520fdd7e51d27d925dd703c7f7fd7d3186",
+      "mountaincar\\agent.py": "c988eb423871b64d582fe44eb77f7349f555caf63ea239cfe58028c5ce34c0c4",
+      "mountaincar\\controls.py": "4438ab2638eee08e2b94a8283d8ad9d28817e3c7717cfc074f5b40f9d24c6f16",
+      "mountaincar\\evaluation.py": "772892687f069caff9b189326e61df22ed0dab45cd3d7146cca02438251d8e5c",
+      "mountaincar\\recording.py": "59c5eb9fb57381570318c30781b0eee434d1e8a60f7745c8d63fcca16807430a",
+      "mountaincar\\diagnostics.py": "5bdbda99bbf38ca8429eaed1e603ba8802836113bf3d4958f6bcb6a246e40782"
+    },
+    "action_energy_note": "For this completed run, inferred as (100*success - reward)/0.1 from Gymnasium Continuous MountainCar reward identity; later runs accumulate applied action squared directly.",
+    "diagnostics_source_note": "The diagnostics.py hash identifies the final runner; the completed run used an earlier equivalent evaluation loop before direct energy accumulation, source-hash instrumentation and trace-stat corrections were added. Energy and trace statistics were reconstructed afterward from the saved results.",
+    "grid_random_hold_note": "Each grid point uses a different random action seed, so random_hold failure runs do not isolate position effects."
+  },
+  "results": {
+    "seed_1": {
+      "new_seeds": {
+        "mean_reward": 95.5853974590301,
+        "success_rate": 0.991,
+        "mean_length": 458.92,
+        "mean_action_energy": 35.14602540969882,
+        "median_length": 425.0,
+        "p95_length": 797.05,
+        "timeout_count": 9,
+        "environment_steps": 458920
+      },
+      "grid": {
+        "mean_reward": 96.03101848617483,
+        "success_rate": 0.9950248756218906,
+        "mean_length": 446.72636815920396,
+        "mean_action_energy": 34.71469076014211,
+        "median_length": 397.0,
+        "p95_length": 726.0,
+        "timeout_count": 1,
+        "environment_steps": 89792
+      },
+      "grid_failure_intervals": [
+        [
+          -0.48899999260902405,
+          -0.48899999260902405,
+          1
+        ]
+      ]
+    },
+    "seed_2": {
+      "new_seeds": {
+        "mean_reward": 92.99179471128221,
+        "success_rate": 1.0,
+        "mean_length": 184.522,
+        "mean_action_energy": 70.08205288717782,
+        "median_length": 165.0,
+        "p95_length": 290.0,
+        "timeout_count": 0,
+        "environment_steps": 184522
+      },
+      "grid": {
+        "mean_reward": 93.18209083019248,
+        "success_rate": 1.0,
+        "mean_length": 178.99502487562188,
+        "mean_action_energy": 68.17909169807518,
+        "median_length": 163.0,
+        "p95_length": 288.0,
+        "timeout_count": 0,
+        "environment_steps": 35978
+      },
+      "grid_failure_intervals": []
+    },
+    "seed_3": {
+      "new_seeds": {
+        "mean_reward": 92.71904587460224,
+        "success_rate": 1.0,
+        "mean_length": 191.076,
+        "mean_action_energy": 72.80954125397761,
+        "median_length": 170.0,
+        "p95_length": 292.0,
+        "timeout_count": 0,
+        "environment_steps": 191076
+      },
+      "grid": {
+        "mean_reward": 92.82867730419332,
+        "success_rate": 1.0,
+        "mean_length": 187.60199004975124,
+        "mean_action_energy": 71.71322695806681,
+        "median_length": 170.0,
+        "p95_length": 290.0,
+        "timeout_count": 0,
+        "environment_steps": 37708
+      },
+      "grid_failure_intervals": []
+    },
+    "seed_4": {
+      "new_seeds": {
+        "mean_reward": 97.03724386095166,
+        "success_rate": 0.995,
+        "mean_length": 446.051,
+        "mean_action_energy": 24.627561390483297,
+        "median_length": 419.0,
+        "p95_length": 718.0,
+        "timeout_count": 5,
+        "environment_steps": 446051
+      },
+      "grid": {
+        "mean_reward": 97.06661953604831,
+        "success_rate": 0.9950248756218906,
+        "mean_length": 435.8905472636816,
+        "mean_action_energy": 24.358680261407596,
+        "median_length": 392.0,
+        "p95_length": 715.0,
+        "timeout_count": 1,
+        "environment_steps": 87614
+      },
+      "grid_failure_intervals": [
+        [
+          -0.5189999938011169,
+          -0.5189999938011169,
+          1
+        ]
+      ]
+    },
+    "seed_5": {
+      "new_seeds": {
+        "mean_reward": 92.13064291529278,
+        "success_rate": 1.0,
+        "mean_length": 229.676,
+        "mean_action_energy": 78.69357084707208,
+        "median_length": 201.5,
+        "p95_length": 393.0,
+        "timeout_count": 0,
+        "environment_steps": 229676
+      },
+      "grid": {
+        "mean_reward": 92.09122198332905,
+        "success_rate": 1.0,
+        "mean_length": 231.86567164179104,
+        "mean_action_energy": 79.0877801667094,
+        "median_length": 202.0,
+        "p95_length": 410.0,
+        "timeout_count": 0,
+        "environment_steps": 46605
+      },
+      "grid_failure_intervals": []
+    },
+    "random_hold": {
+      "new_seeds": {
+        "mean_reward": 72.89690349371575,
+        "success_rate": 0.892,
+        "mean_length": 494.37,
+        "mean_action_energy": 163.03096506284245,
+        "median_length": 420.5,
+        "p95_length": 999.0,
+        "timeout_count": 108,
+        "environment_steps": 494370
+      },
+      "grid": {
+        "mean_reward": 75.59105530535729,
+        "success_rate": 0.9154228855721394,
+        "mean_length": 487.55223880597015,
+        "mean_action_energy": 159.51233251856652,
+        "median_length": 412.0,
+        "p95_length": 999.0,
+        "timeout_count": 17,
+        "environment_steps": 97998
+      },
+      "grid_failure_intervals": [
+        [
+          -0.5929999947547913,
+          -0.5920000076293945,
+          2
+        ],
+        [
+          -0.5879999995231628,
+          -0.5879999995231628,
+          1
+        ],
+        [
+          -0.5600000023841858,
+          -0.5600000023841858,
+          1
+        ],
+        [
+          -0.5569999814033508,
+          -0.5569999814033508,
+          1
+        ],
+        [
+          -0.5410000085830688,
+          -0.5410000085830688,
+          1
+        ],
+        [
+          -0.5339999794960022,
+          -0.5339999794960022,
+          1
+        ],
+        [
+          -0.531000018119812,
+          -0.531000018119812,
+          1
+        ],
+        [
+          -0.5189999938011169,
+          -0.5189999938011169,
+          1
+        ],
+        [
+          -0.5059999823570251,
+          -0.5059999823570251,
+          1
+        ],
+        [
+          -0.4950000047683716,
+          -0.4950000047683716,
+          1
+        ],
+        [
+          -0.4909999966621399,
+          -0.49000000953674316,
+          2
+        ],
+        [
+          -0.4869999885559082,
+          -0.4869999885559082,
+          1
+        ],
+        [
+          -0.4749999940395355,
+          -0.4749999940395355,
+          1
+        ],
+        [
+          -0.4390000104904175,
+          -0.4390000104904175,
+          1
+        ],
+        [
+          -0.42500001192092896,
+          -0.42500001192092896,
+          1
+        ]
+      ]
+    },
+    "heuristic": {
+      "new_seeds": {
+        "mean_reward": 89.35430000000004,
+        "success_rate": 1.0,
+        "mean_length": 106.457,
+        "mean_action_energy": 106.45699999999968,
+        "median_length": 106.0,
+        "p95_length": 109.0,
+        "timeout_count": 0,
+        "environment_steps": 106457
+      },
+      "grid": {
+        "mean_reward": 89.34676616915426,
+        "success_rate": 1.0,
+        "mean_length": 106.53233830845771,
+        "mean_action_energy": 106.5323383084574,
+        "median_length": 106.0,
+        "p95_length": 110.0,
+        "timeout_count": 0,
+        "environment_steps": 21413
+      },
+      "grid_failure_intervals": []
+    }
+  },
+  "traces": {
+    "20047": {
+      "length": 999,
+      "success": false,
+      "initial_position": -0.5187955498695374,
+      "reward": -1.461924667264679,
+      "action_abs_max": 0.5297371745109558,
+      "action_rms": 0.12097057722107467,
+      "speed_sign_switches": 26,
+      "position_min": -1.1179208755493164,
+      "position_max": 0.04258083179593086
+    },
+    "20046": {
+      "length": 422,
+      "success": true,
+      "initial_position": -0.5558354258537292,
+      "reward": 97.87866300630296,
+      "action_abs_max": 0.6348425149917603,
+      "action_rms": 0.22420671073752466,
+      "speed_sign_switches": 10,
+      "position_min": -1.2000000476837158,
+      "position_max": 0.47608691453933716
+    }
+  },
+  "evaluation_environment_steps": 2528180,
+  "trace_environment_steps": 1421,
+  "video_environment_steps": 1421,
+  "elapsed_seconds": 121.8289999999979
+}

@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+runs/
+.mpl-cache/
+.pytest_cache/
+.installation-check/
+.pytest-tmp-*/
+/results/improvements/study/test_temp/
+
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+.aws/
+
+# Ongoing study outputs stay local until the full protocol is complete
+/results/improvements/study/

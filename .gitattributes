@@ -1,0 +1,2 @@
+# Preserve exact bytes used by experiment artifact SHA-256 manifests.
+* -text

@@ -1,0 +1,40 @@
+{
+  "config": {
+    "num_envs": 8,
+    "rollout_steps": 32,
+    "total_timesteps": 200000,
+    "action_repeat": 20,
+    "minibatch_size": 64,
+    "update_epochs": 10,
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_coef": 0.2,
+    "value_coef": 0.5,
+    "entropy_coef": 0.01,
+    "max_grad_norm": 0.5,
+    "eval_every_updates": 2,
+    "torch_threads": 1
+  },
+  "seed": 1,
+  "steps": 200000,
+  "decisions": 10601,
+  "training_successes": 1400,
+  "best_step": 19985,
+  "best_mean_reward": 96.08287126033514,
+  "best_success_rate": 1.0,
+  "best_checkpoint": "results\\revised\\final\\seed_1\\best.pt",
+  "best_validation": {
+    "mean_reward": 96.08287126033514,
+    "success_rate": 1.0,
+    "mean_length": 501.15,
+    "mean_action_energy": 39.171287407071645,
+    "mean_max_position": 0.4741539016366005,
+    "mean_max_speed": 0.05939484722912312
+  },
+  "max_validation_success_rate": 1.0,
+  "elapsed_seconds": 17.125,
+  "gymnasium_version": "1.4.0",
+  "torch_version": "2.15.0+cpu",
+  "numpy_version": "2.5.4"
+}

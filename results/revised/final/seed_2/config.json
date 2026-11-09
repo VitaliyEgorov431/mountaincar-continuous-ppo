@@ -1,0 +1,18 @@
+{
+  "num_envs": 8,
+  "rollout_steps": 32,
+  "total_timesteps": 200000,
+  "action_repeat": 20,
+  "minibatch_size": 64,
+  "update_epochs": 10,
+  "learning_rate": 0.0003,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "clip_coef": 0.2,
+  "value_coef": 0.5,
+  "entropy_coef": 0.01,
+  "max_grad_norm": 0.5,
+  "eval_every_updates": 2,
+  "torch_threads": 1,
+  "seed": 2
+}
